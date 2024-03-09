@@ -1,5 +1,5 @@
 # Termux dan Linux Ubuntu Lunar
-![gambar termux]()
+![gambar termux](https://github.com/Day21cyber/Termux-dan-linux-ubuntu-lunar/blob/main/Screenshot_20240308_142819.jpg)
 <html>
   <body>
 <h1>Pengenalan</h1>
