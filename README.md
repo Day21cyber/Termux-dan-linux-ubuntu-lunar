@@ -138,4 +138,5 @@ sudo apt install audacity -y
 Dengan mengikuti langkah-langkah di atas, Anda dapat dengan mudah menginstal dan mengkonfigurasi aplikasi Termux dan Ubuntu di perangkat Android Anda.
 
 
-hubungi kami 
+hubungi kami [grub wa]
+Buka tautan ini untuk bergabung ke grup WhatsApp saya: (https://chat.whatsapp.com/JDy9ito5fQ09QajwJJXHsZ)
