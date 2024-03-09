@@ -93,8 +93,10 @@ sudo whoami
 ```
 
 ## Langkah 3: Instalasi Desktop Environment dan Aplikasi
+catatan: jika gagal atau layar hitam saat memasuki vncserver maka tambahkan sudo di setiap perintahnya. 
+
 ```bash
-apt update && apt dist-upgrade -y ; apt install xfce4 xfce4-terminal xfce4-whiskermenu-plugin ubuntu-wallpapers dbus-x11 sudo plank git gedit dconf-editor yaru-theme-gtk yaru-theme-icon -y ; git clone https://github.com/adi1090x/rofi ; cd rofi ; ./setup.sh ; cd ; ln -s /data/data/com.termux/files/home/storage
+sudo apt update && sudo apt dist-upgrade -y ; sudo apt install xfce4 xfce4-terminal xfce4-whiskermenu-plugin ubuntu-wallpapers dbus-x11 sudo plank git gedit dconf-editor yaru-theme-gtk yaru-theme-icon -y ; git clone https://github.com/adi1090x/rofi ; cd rofi ; ./setup.sh ; cd ; ln -s /data/data/com.termux/files/home/storage
 ```
 
 ## Instalasi Browser Web (Pilih Salah Satu)
