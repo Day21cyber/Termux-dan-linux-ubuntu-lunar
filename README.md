@@ -1,4 +1,5 @@
 # Termux dan Linux Ubuntu Lunar
+![gambar termux]()
 <html>
   <body>
 <h1>Pengenalan</h1>
