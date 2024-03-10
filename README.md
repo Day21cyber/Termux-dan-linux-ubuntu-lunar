@@ -91,17 +91,25 @@ Tambahkan yang ada tulisan `# User privilege specification` di bawah `root`:
 ```
 Nama_kamu    ALL=(ALL:ALL) ALL
 ```
-Tekan `Ctrl s` dan `x`
+Tekan `Ctrl s` dan `x` setelah itu add atau tambah nama kamu.
 ```bash
 adduser Nama_kamu
+```
+masuk ke user ubuntu kamu
 su - Nama_kamu 
+check apakah kamu sudah masuk root atau belum.
+```bash
 whoami
 sudo whoami
 ```
 
 ## konfigurasi desktop
+buat foleder `.vnc`.
 ```bash
 mkdir ~/.vnc
+```
+masuk ke editor text nano
+```bash
 nano ~/.vnc/xstartup
 ```
 ## paste ini
