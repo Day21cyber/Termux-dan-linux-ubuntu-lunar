@@ -77,6 +77,7 @@ ubuntu
 apt update
 apt install sudo -y
 apt install adduser -y
+```
 
 ## Langkah 3: Instalasi Desktop Environment dan Aplikasi
 ```bash
