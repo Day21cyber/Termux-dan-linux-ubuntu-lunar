@@ -54,8 +54,7 @@ Catatan: Pastikan untuk memperbarui dan memasang paket-paket yang diperlukan den
 
 ---
 
-
-# Penginstalan Aplikasi Termux dan Ubuntu
+# Penginstalan  Termux dan Ubuntu dekstop
 
 ## Langkah 1: Persiapan dan Pengaturan Awal
 ```bash
@@ -78,6 +77,13 @@ ubuntu
 apt update
 apt install sudo -y
 apt install adduser -y
+
+## Langkah 3: Instalasi Desktop Environment dan Aplikasi
+```bash
+apt update && apt dist-upgrade -y ; apt install xfce4 xfce4-terminal xfce4-whiskermenu-plugin ubuntu-wallpapers dbus-x11 sudo plank git gedit dconf-editor yaru-theme-gtk yaru-theme-icon -y ; git clone https://github.com/adi1090x/rofi ; cd rofi ; ./setup.sh ; cd ; ln -s /data/data/com.termux/files/home/storage
+```
+## Setelah itu paste :
+```bash
 nano /etc/sudoers
 ```
 Tambahkan yang ada tulisan `# User privilege specification` di bawah `root`:
@@ -92,11 +98,22 @@ whoami
 sudo whoami
 ```
 
-## Langkah 3: Instalasi Desktop Environment dan Aplikasi
-catatan: jika gagal atau layar hitam saat memasuki vncserver maka tambahkan sudo di setiap perintahnya. 
-
+## konfigurasi desktop
 ```bash
-sudo apt update && sudo apt dist-upgrade -y ; sudo apt install xfce4 xfce4-terminal xfce4-whiskermenu-plugin ubuntu-wallpapers dbus-x11 sudo plank git gedit dconf-editor yaru-theme-gtk yaru-theme-icon -y ; git clone https://github.com/adi1090x/rofi ; cd rofi ; ./setup.sh ; cd ; ln -s /data/data/com.termux/files/home/storage
+mkdir ~/.vnc
+nano ~/.vnc/xstartup
+```
+## paste ini
+```bash
+#!/bin/bash
+
+export XDG_CURRENT_DESKTOP="XFCE"
+startxfce4 &
+```
+## Recommended packages:
+```bash
+  printer-driver-braille appmenu-qt jayatana ubuntu-system-service
+  systemd-services
 ```
 
 ## Instalasi Browser Web (Pilih Salah Satu)
@@ -110,6 +127,7 @@ sudo apt install gnupg ; echo "deb http://ftp.debian.org/debian stable main cont
 ```
 
 ## Langkah 4: Pengaturan VNC
+Keluar dari repositori ubuntu dengan mengetik `exit` paste kode dibawah ini .
 ```bash
 echo "DISPLAY=:1 xfce4-session" > /usr/local/bin/startserver ; chmod +x /usr/local/bin/startserver
 pkg install x11-repo ; pkg install xorg-xhost tigervnc -y ; echo "vncserver -geometry 1600x700 -listen tcp :1 ; DISPLAY=:1 xhost +" > ../usr/bin/connectvnc ; chmod +x ../usr/bin/connectvnc
