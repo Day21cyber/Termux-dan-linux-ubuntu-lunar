@@ -119,6 +119,10 @@ nano ~/.vnc/xstartup
 export XDG_CURRENT_DESKTOP="XFCE"
 startxfce4 &
 ```
+beri izin 
+```
+chmod +x ~/.vnc/xstartup
+```
 ## Recommended packages:
 ```bash
   printer-driver-braille appmenu-qt jayatana ubuntu-system-service
